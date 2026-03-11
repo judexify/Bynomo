@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Bynomo - The First On-Chain Binary Options Trading Dapp oN BlockChains
+    </title>
+    <link rel="icon" href="img/bynomologo.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav-logo">
+          <span class="bynomo-logo">BYNOMO</span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#trade" class="nav-link">Trade</a></li>
+          <li><a href="#markets" class="nav-link">Markets</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a
+            href="https://bynomo.vercel.app/trade"
+            target="_blank"
+            class="btn-primary"
+            >Launch App</a
+          >
+        </div>
+      </nav>
+    </header>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+
+      <div class="hero-content">
+        <div class="hero-left">
+          <span class="hero-label"> On-Chain · Oracle-Powered · BNB Chain</span>
+          <h1 class="hero-headline">
+            Trade Binary Options.<br />
+            On-Chain.<br />
+            In Seconds.
+          </h1>
+          <p class="hero-sub">
+            Oracle-bound resolution, zero manipulation, and lightning-fast
+            settlement - the first real binary options dapp on BNB Chain.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              href="https://bynomo.vercel.app/"
+              target="_blank"
+              class="btn-primary"
+              >Launch App</a
+            >
+            <a href="#how-it-works" class="btn-ghost">How It Works</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <span class="stat-value">590M+</span>
+              <span class="stat-label">Crypto Users</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <span class="stat-value">&lt; 0.001ms</span>
+              <span class="stat-label">Settlement</span>
+            </div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat">
+              <span class="stat-value">20+</span>
+              <span class="stat-label">Assets</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card hero-card--back">
+            <img src="/img/hero-btc.jpg" alt="BTC/USDT Trading Interface" />
+          </div>
+          <div class="hero-card hero-card--front">
+            <img src="/img/hero-bnb.jpg" alt="BNB/USDT Trading Interface" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem" id="problem">
+      <div class="problem-bg-glow"></div>
+
+      <div class="problem-container">
+        <div class="problem-header">
+          <span class="section-label danger">⚠ The Problem</span>
+          <h2 class="problem-headline">
+            The Market Was Broken.<br />On Purpose.
+          </h2>
+          <p class="problem-sub">
+            Binary options had the demand. The infrastructure just wasn't honest
+            enough to support it.
+          </p>
+        </div>
+
+        <div class="problem-grid">
+          <div class="problem-card">
+            <span class="problem-card-icon"
+              ><i class="fa-solid fa-scale-unbalanced problem-card-icon"></i
+            ></span>
+            <h3>Web2 Is Rigged</h3>
+            <p>
+              Platforms like Binomo and IQ Option operate with opaque pricing,
+              algorithmic bias, and zero on-chain settlement. You don't custody
+              your funds. You just trust them — and they've proven they can't be
+              trusted.
+            </p>
+          </div>
+
+          <div class="problem-card">
+            <span class="problem-card-icon"
+              ><i class="fa-solid fa-tower-broadcast problem-card-icon"></i
+            ></span>
+            <h3>Web3 Had No Infrastructure</h3>
+            <p>
+              Sub-second binary options need sub-second price data. Until
+              recently, no oracle could deliver that. One news event, one big
+              market move — and the entire data layer crashed.
+            </p>
+          </div>
+
+          <div class="problem-card">
+            <span class="problem-card-icon"
+              ><i class="fa-solid fa-lock problem-card-icon"></i
+            ></span>
+            <h3>No Custody. No Transparency.</h3>
+            <p>
+              In Web2, your funds sit in a black box. No on-chain settlement, no
+              verifiable resolution. The house always wins — not because of
+              odds, but because of control.
+            </p>
+          </div>
+        </div>
+
+        <div class="problem-stats">
+          <div class="problem-stat">
+            <span class="pstat-value">590M+</span>
+            <span class="pstat-label"
+              >Crypto users with no honest binary options platform</span
+            >
+          </div>
+          <div class="problem-stat-divider"></div>
+          <div class="problem-stat">
+            <span class="pstat-value">400M</span>
+            <span class="pstat-label"
+              >Transactions every single day — with nowhere to trade binary
+              options on-chain</span
+            >
+          </div>
+          <div class="problem-stat-divider"></div>
+          <div class="problem-stat">
+            <span class="pstat-value">$0</span>
+            <span class="pstat-label"
+              >Legitimate on-chain binary options volume on BNB Chain before
+              Bynomo</span
+            >
+          </div>
+        </div>
+
+        <div class="problem-bridge">
+          <span>So we built Bynomo.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="solution" id="trade">
+      <div class="solution-bg-glow"></div>
+
+      <div class="solution-container">
+        <div class="solution-header">
+          <span class="section-label accent">✦ Solution</span>
+          <h2 class="solution-headline">
+            Everything They Couldn't Build.<br />We Did.
+          </h2>
+          <p class="solution-sub">
+            Bynomo is the only platform that delivers real-time oracle-bound
+            binary options — fully on-chain, fully yours.
+          </p>
+        </div>
+
+        <div class="solution-table-wrapper">
+          <table class="solution-table">
+            <thead>
+              <tr>
+                <th class="col-feature">Feature</th>
+                <th class="col-bynomo">
+                  <span class="bynomo-logo table-logo">BYNOMO</span>
+                </th>
+                <th>
+                  Web2<br /><span class="th-sub">Binomo / IQ Option</span>
+                </th>
+                <th>
+                  Prediction Markets<br /><span class="th-sub"
+                    >Polymarket / Kalshi</span
+                  >
+                </th>
+                <th>
+                  CEX Derivatives<br /><span class="th-sub"
+                    >Binance / Bybit</span
+                  >
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>On-chain settlement</td>
+                <td class="col-bynomo">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+              </tr>
+              <tr>
+                <td>Real-time oracle pricing</td>
+                <td class="col-bynomo">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+                <td><i class="fa-solid fa-circle-check check neutral"></i></td>
+              </tr>
+              <tr>
+                <td>Sub-minute timeframes (5s–1m)</td>
+                <td class="col-bynomo">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </td>
+                <td><i class="fa-solid fa-circle-check check neutral"></i></td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+              </tr>
+              <tr>
+                <td>Self-custody of funds</td>
+                <td class="col-bynomo">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+                <td><i class="fa-solid fa-circle-check check neutral"></i></td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+              </tr>
+              <tr>
+                <td>No tx signature per bet</td>
+                <td class="col-bynomo">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+              </tr>
+              <tr>
+                <td>1–10x leverage</td>
+                <td class="col-bynomo">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+                <td><i class="fa-solid fa-circle-check check neutral"></i></td>
+              </tr>
+              <tr>
+                <td>Settlement under 0.001ms</td>
+                <td class="col-bynomo">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+                <td><i class="fa-solid fa-circle-xmark cross"></i></td>
+              </tr>
+              <tr>
+                <td>20+ tradeable assets</td>
+                <td class="col-bynomo">
+                  <i class="fa-solid fa-circle-check check"></i>
+                </td>
+                <td><i class="fa-solid fa-circle-check check neutral"></i></td>
+                <td><i class="fa-solid fa-circle-check check neutral"></i></td>
+                <td><i class="fa-solid fa-circle-check check neutral"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="solution-pillars">
+          <div class="pillar-card">
+            <i class="fa-solid fa-bolt pillar-icon"></i>
+            <h3>Fast</h3>
+            <p>
+              5s to 1m timeframes. Oracle resolution in under 0.001ms. No
+              waiting, no delays, no excuses.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <i class="fa-solid fa-link pillar-icon"></i>
+            <h3>Real</h3>
+            <p>
+              Every price pulled from Pyth Network Hermes in real time. Every
+              outcome settled on-chain. Zero manipulation.
+            </p>
+          </div>
+          <div class="pillar-card">
+            <i class="fa-solid fa-sliders pillar-icon"></i>
+            <h3>Simple</h3>
+            <p>
+              Connect wallet. Deposit BNB. Pick higher or lower. That's it — no
+              complex UX, no hidden mechanics.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="howitworks" id="how-it-works">
+      <div class="howitworks-container">
+        <div class="howitworks-header">
+          <span class="section-label accent"> ✦ How It Works</span>
+
+          <p class="howitworks-sub">
+            No complex mechanics. No hidden steps. Just connect, deposit, and
+            trade.
+          </p>
+        </div>
+
+        <div class="howitworks-steps">
+          <div class="step">
+            <div class="step-left">
+              <span class="step-number">01</span>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <div class="step-icon-wrap">
+                <i class="fa-solid fa-wallet"></i>
+              </div>
+              <div class="step-text">
+                <h3>Connect Your Wallet</h3>
+                <p>
+                  Land on Bynomo and connect via MetaMask or Privy. Switch to
+                  BNB Mainnet and deposit BNB into your Bynomo trading wallet.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-left">
+              <span class="step-number">02</span>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <div class="step-icon-wrap">
+                <i class="fa-solid fa-coins"></i>
+              </div>
+              <div class="step-text">
+                <h3>Select Amount & Mode</h3>
+                <p>
+                  Click Bet, choose your investment amount, then pick Classic
+                  Mode (Up/Down with expiry) or Box Mode (tap multiplier tiles).
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-left">
+              <span class="step-number">03</span>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <div class="step-icon-wrap">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <div class="step-text">
+                <h3>Place Your Trade</h3>
+                <p>
+                  In Classic Mode, call Higher or Lower with a timeframe from 5s
+                  to 1m. In Box Mode, tap a multiplier tile — if the price line
+                  touches it, you win.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-left">
+              <span class="step-number">04</span>
+              <div class="step-line"></div>
+            </div>
+            <div class="step-body">
+              <div class="step-icon-wrap">
+                <i class="fa-solid fa-bolt"></i>
+              </div>
+              <div class="step-text">
+                <h3>Oracle Settles Instantly</h3>
+                <p>
+                  Pyth Network pulls the price at expiry in under 0.001ms. Win
+                  or lose, your house balance updates immediately. No on-chain
+                  tx required per bet.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="step last-step">
+            <div class="step-left">
+              <span class="step-number">05</span>
+            </div>
+            <div class="step-body">
+              <div class="step-icon-wrap">
+                <i class="fa-solid fa-money-bill-transfer"></i>
+              </div>
+              <div class="step-text">
+                <h3>Withdraw Anytime</h3>
+                <p>
+                  Request a withdrawal and BNB is sent directly from the
+                  treasury wallet to yours. Profit minus loss settled
+                  transparently, on-chain.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="techstack">
+        <div class="techstack-label">
+          <span>INFRA || TECH </span>
+        </div>
+        <div class="marquee-wrapper">
+          <div class="marquee-row marquee-left">
+            <div class="marquee-track" id="marquee-row-1"></div>
+          </div>
+          <div class="marquee-row marquee-right">
+            <div class="marquee-track" id="marquee-row-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="opportunity" id="about">
+      <div class="opportunity-bg-glow"></div>
+
+      <div class="opportunity-container">
+        <div class="opportunity-stats-strip">
+          <div class="opp-stat">
+            <span class="opp-stat-value">$27.56B</span>
+            <span class="opp-stat-label">Binary Options Market 2025</span>
+          </div>
+          <div class="opp-stat-divider"></div>
+          <div class="opp-stat">
+            <span class="opp-stat-value">$86T+</span>
+            <span class="opp-stat-label">Crypto Derivatives Annual Volume</span>
+          </div>
+          <div class="opp-stat-divider"></div>
+          <div class="opp-stat">
+            <span class="opp-stat-value">$45B+</span>
+            <span class="opp-stat-label">Crypto Prediction Markets Volume</span>
+          </div>
+          <div class="opp-stat-divider"></div>
+          <div class="opp-stat">
+            <span class="opp-stat-value">590M+</span>
+            <span class="opp-stat-label">Crypto Users Worldwide</span>
+          </div>
+        </div>
+
+        <div class="opportunity-header">
+          <span class="section-label accent">✦ What's Next</span>
+          <!-- <h2 class="opportunity-headline">
+            The Roadmap Is Just<br />Getting Started.
+          </h2> -->
+        </div>
+
+        <div class="opportunity-body">
+          <div class="opportunity-left">
+            <p class="opportunity-desc">
+              Bynomo's current product is the foundation. What comes next turns
+              it into the most comprehensive on-chain trading platform on BNB
+              Chain — and eventually, the PolyMarket of binary options
+              predictions.
+            </p>
+            <p class="opportunity-desc">
+              Every feature on the roadmap is a direct response to what the
+              market demands and what competitors have failed to deliver. The
+              infrastructure is already built. The expansion is inevitable.
+            </p>
+            <div class="opportunity-mission">
+              <span>
+                To be the next PolyMarket for Binary Options Predictions.</span
+              >
+            </div>
+          </div>
+
+          <div class="opportunity-right">
+            <p class="roadmap-heading">Coming Soon</p>
+            <ul class="roadmap-list">
+              <li class="roadmap-item">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <div>
+                  <span class="roadmap-title">P2P Mode</span>
+                  <span class="roadmap-desc"
+                    >Trade directly against other users, no house
+                    involvement.</span
+                  >
+                </div>
+              </li>
+              <li class="roadmap-item">
+                <i class="fa-solid fa-chart-column"></i>
+                <div>
+                  <span class="roadmap-title">Stocks & Forex</span>
+                  <span class="roadmap-desc"
+                    >Expand beyond crypto into global financial markets.</span
+                  >
+                </div>
+              </li>
+              <li class="roadmap-item">
+                <i class="fa-solid fa-code-branch"></i>
+                <div>
+                  <span class="roadmap-title">Options & Derivatives</span>
+                  <span class="roadmap-desc"
+                    >Full options suite for advanced on-chain traders.</span
+                  >
+                </div>
+              </li>
+              <li class="roadmap-item">
+                <i class="fa-solid fa-rocket"></i>
+                <div>
+                  <span class="roadmap-title">Futures</span>
+                  <span class="roadmap-desc"
+                    >Long and short futures contracts, settled on-chain.</span
+                  >
+                </div>
+              </li>
+              <li class="roadmap-item">
+                <i class="fa-solid fa-rotate"></i>
+                <div>
+                  <span class="roadmap-title">DEX</span>
+                  <span class="roadmap-desc"
+                    >A fully decentralised exchange layer built into
+                    Bynomo.</span
+                  >
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-glow"></div>
+
+      <div class="footer-container">
+        <div class="footer-main">
+          <div class="footer-brand">
+            <span class="bynomo-logo footer-logo">BYNOMO</span>
+            <p class="footer-tagline">
+              The first on-chain binary options trading dapp on BNB Chain.
+              Oracle-bound. Trustless. Fast.
+            </p>
+            <div class="footer-socials">
+              <a
+                href="https://x.com/bynomofun"
+                target="_blank"
+                rel="noopener"
+                class="social-link"
+                aria-label="Twitter"
+              >
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a
+                href="https://t.me/bynomo"
+                target="_blank"
+                rel="noopener"
+                class="social-link"
+                aria-label="Telegram"
+              >
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+              <a
+                href="https://discord.gg/Cf6psQYSdT"
+                target="_blank"
+                rel="noopener"
+                class="social-link"
+                aria-label="Discord"
+              >
+                <i class="fa-brands fa-discord"></i>
+              </a>
+              <a
+                href="https://x.com/amaanbiz"
+                target="_blank"
+                rel="noopener"
+                class="social-link social-link--founder"
+                aria-label="Founder Twitter"
+              >
+                <i class="fa-solid fa-user"></i>
+                <span class="founder-label">Founder</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-nav">
+            <div class="footer-nav-col">
+              <span class="footer-nav-heading">Product</span>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#trade">Trade</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#about">Roadmap</a></li>
+              </ul>
+            </div>
+            <div class="footer-nav-col">
+              <span class="footer-nav-heading">Resources</span>
+              <ul>
+                <li>
+                  <a
+                    href="https://docs.google.com/presentation/d/1kDVnUCeJ-LZ3dfpo_YsSqen6qSzlgzHFWFk79Eodj9A/edit?usp=sharing"
+                    target="_blank"
+                    rel="noopener"
+                    >Whitepaper</a
+                  >
+                </li>
+                <li><a href="#how-it-works">Tech Stack</a></li>
+                <li>
+                  <a href="https://t.me/bynomo" target="_blank" rel="noopener"
+                    >Telegram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://discord.gg/Cf6psQYSdT"
+                    target="_blank"
+                    rel="noopener"
+                    >Discord</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-cta">
+            <span class="footer-cta-label">Ready to Trade?</span>
+            <p class="footer-cta-sub">
+              Join the first on-chain binary options platform on BNB Chain.
+            </p>
+            <a
+              href="https://bynomo.vercel.app/"
+              target="_blank"
+              class="btn-primary"
+              >Launch App</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span class="footer-copy"
+            >© <span class="year"></span> Bynomo. All rights reserved.</span
+          >
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
