@@ -184,6 +184,24 @@ function initLazyImages() {
   });
 }
 
+function initThemeToggle() {
+  const toggles = document.querySelectorAll(
+    "#theme-toggle, #theme-toggle-mobile",
+  );
+  if (!toggles.length) return;
+
+  const saved = localStorage.getItem("bynomo-theme");
+  if (saved === "light") document.body.classList.add("light-mode");
+
+  toggles.forEach((toggle) => {
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
+      const isLight = document.body.classList.contains("light-mode");
+      localStorage.setItem("bynomo-theme", isLight ? "light" : "dark");
+    });
+  });
+}
+
 const year = document.querySelector(".year");
 function getCurYear() {
   if (year) {
@@ -202,4 +220,5 @@ document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
   initNavActiveLink();
   initScrollReveal();
+  initThemeToggle();
 });

@@ -1,8 +1,4 @@
-/* ==============================
-   MEDIA QUERIES
-   ============================== */
-
-/* ── LARGE TABLETS / SMALL LAPTOPS (max 1200px) ── */
+/*  LARGE TABLETS / SMALL LAPTOPS (max 1200px)  */
 @media (max-width: 75em) {
   html {
     font-size: 56.25%;
@@ -77,6 +73,11 @@
 
   .nav-actions {
     display: none;
+  }
+  .nav-mobile-controls {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
   }
 
   .nav-hamburger {

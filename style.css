@@ -29,6 +29,40 @@
   --color-input-border: #2a2d3e;
 }
 
+body.light-mode {
+  /* Backgrounds */
+  --color-bg-primary: #f4f6fb;
+  --color-bg-section: #eef0f7;
+  --color-bg-card: #ffffff;
+  --color-bg-card-hover: #f0eeff;
+
+  /* Text */
+  --color-text-primary: #0b0f1a;
+  --color-text-secondary: #4b5068;
+  --color-text-muted: #8b8fa8;
+
+  /* Brand */
+  --color-accent-primary: #7c3aed;
+  --color-accent-hover: #6d28d9;
+  --color-accent-light: #6d28d9;
+  --color-accent-glow: rgba(124, 58, 237, 0.12);
+
+  /* Trading signals */
+  --color-success: #16a34a;
+  --color-success-bg: rgba(22, 163, 74, 0.08);
+  --color-danger: #dc2626;
+  --color-danger-bg: rgba(220, 38, 38, 0.08);
+
+  /* UI */
+  --color-border: rgba(0, 0, 0, 0.08);
+  --color-border-active: rgba(124, 58, 237, 0.4);
+  --color-input-bg: #ffffff;
+  --color-input-border: #d1d5db;
+
+  /* Footer */
+  --color-footer-bg: #e4e7f2;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -235,6 +269,10 @@ body {
   display: flex;
   align-items: center;
   gap: 1.2rem;
+}
+
+.nav-mobile-controls {
+  display: none;
 }
 
 .btn-ghost {
@@ -1550,4 +1588,117 @@ body {
   font-size: 1.2rem;
   color: var(--color-text-muted);
   font-family: sans-serif;
+}
+
+/* Light mode overrides */
+body.light-mode .navbar {
+  background-color: rgba(244, 246, 251, 0.9);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+body.light-mode .bynomo-logo {
+  background: linear-gradient(to right, #0b0f1a, #7c3aed, #0b0f1a);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+body.light-mode .hero {
+  background-color: var(--color-bg-primary);
+}
+
+body.light-mode .hero-glow {
+  background: radial-gradient(
+    circle,
+    rgba(124, 58, 237, 0.12) 0%,
+    transparent 70%
+  );
+}
+
+body.light-mode .problem-bg-glow {
+  background: radial-gradient(
+    circle,
+    rgba(239, 68, 68, 0.06) 0%,
+    transparent 70%
+  );
+}
+
+body.light-mode .footer {
+  background-color: var(--color-footer-bg);
+}
+
+body.light-mode .footer-glow {
+  background: radial-gradient(
+    ellipse,
+    rgba(124, 58, 237, 0.05) 0%,
+    transparent 70%
+  );
+}
+
+body.light-mode .solution-table thead tr {
+  background-color: #f8f7ff;
+}
+
+body.light-mode .solution-table tbody tr:hover {
+  background-color: var(--color-bg-card-hover);
+}
+
+body.light-mode .step-number {
+  background-color: #ffffff;
+}
+
+body.light-mode .step-icon-wrap {
+  background-color: #ffffff;
+}
+
+body.light-mode .img-placeholder {
+  background: linear-gradient(135deg, #e8e8f0 0%, #f0eeff 50%, #e8e8f0 100%);
+  background-size: 200% 200%;
+}
+
+body.light-mode .nav-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+body.light-mode .nav-links {
+  /* background-color: rgba(244, 246, 251, 0.98); */
+  background-color: transparent;
+}
+
+.theme-toggle {
+  width: 4rem;
+  height: 4rem;
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--color-text-secondary);
+  font-size: 1.4rem;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  border-color: var(--color-accent-primary);
+  color: var(--color-accent-light);
+  transform: rotate(15deg);
+}
+
+.theme-toggle .icon-sun {
+  display: none;
+}
+.theme-toggle .icon-moon {
+  display: block;
+}
+
+body.light-mode .theme-toggle .icon-sun {
+  display: block;
+}
+body.light-mode .theme-toggle .icon-moon {
+  display: none;
 }
