@@ -17,8 +17,10 @@
     />
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
   </head>
   <body>
+    <div class="nav-overlay" id="nav-overlay"></div>
     <header>
       <nav class="navbar">
         <div class="nav-logo">
@@ -26,9 +28,8 @@
         </div>
 
         <ul class="nav-links">
-          <li><a href="#" class="nav-link active">Home</a></li>
+          <li><a href="#" class="nav-link">Home</a></li>
           <li><a href="#trade" class="nav-link">Trade</a></li>
-          <li><a href="#markets" class="nav-link">Markets</a></li>
           <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
           <li><a href="#about" class="nav-link">About</a></li>
         </ul>
@@ -41,6 +42,15 @@
             >Launch App</a
           >
         </div>
+        <button
+          class="nav-hamburger"
+          id="nav-hamburger"
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </nav>
     </header>
     <section class="hero" id="home">
@@ -670,10 +680,10 @@
           <span class="footer-copy"
             >© <span class="year"></span> Bynomo. All rights reserved.</span
           >
-          <div class="footer-bottom-links">
+          <!-- <div class="footer-bottom-links">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Use</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </footer>

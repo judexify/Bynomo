@@ -1,11 +1,57 @@
 "use script";
 
+function initMobileNav() {
+  const hamburger = document.getElementById("nav-hamburger");
+  const navLinks = document.querySelector(".nav-links");
+  const overlay = document.getElementById("nav-overlay");
+  if (!hamburger || !navLinks || !overlay) return;
+
+  function openNav() {
+    hamburger.classList.add("open");
+    navLinks.classList.add("nav-open");
+    overlay.style.display = "block";
+    setTimeout(() => overlay.classList.add("active"), 10);
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeNav() {
+    hamburger.classList.remove("open");
+    navLinks.classList.remove("nav-open");
+    overlay.classList.remove("active");
+    setTimeout(() => (overlay.style.display = "none"), 350);
+    document.body.style.overflow = "";
+  }
+
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.contains("nav-open") ? closeNav() : openNav();
+  });
+
+  overlay.addEventListener("click", closeNav);
+
+  navLinks.querySelectorAll(".nav-link").forEach((link) => {
+    link.addEventListener("click", closeNav);
+  });
+}
+
+function initNavActiveLink() {
+  const navLinks = document.querySelectorAll(".nav-link");
+  if (!navLinks.length) return;
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.forEach((l) => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+}
+
 function initHeroCardSwap() {
   const front = document.querySelector(".hero-card--front");
   const back = document.querySelector(".hero-card--back");
   if (!front || !back) return;
 
   let swapped = false;
+  if (window.innerWidth <= 968) return;
 
   setInterval(() => {
     swapped = !swapped;
@@ -104,4 +150,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initHeroCardSwap();
   initMarquee();
   getCurYear();
+  initMobileNav();
+  initNavActiveLink();
 });
