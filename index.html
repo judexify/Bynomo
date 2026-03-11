@@ -99,10 +99,24 @@
 
         <div class="hero-right">
           <div class="hero-card hero-card--back">
-            <img src="img/hero-btc.jpg" alt="BTC/USDT Trading Interface" />
+            <div class="img-placeholder"></div>
+            <img
+              src="/img/hero-btc.jpg"
+              alt="BTC/USDT Trading Interface"
+              loading="lazy"
+              decoding="async"
+              class="hero-img"
+            />
           </div>
           <div class="hero-card hero-card--front">
-            <img src="img/hero-bnb.jpg" alt="BNB/USDT Trading Interface" />
+            <div class="img-placeholder"></div>
+            <img
+              src="/img/hero-bnb.jpg"
+              alt="BNB/USDT Trading Interface"
+              loading="lazy"
+              decoding="async"
+              class="hero-img"
+            />
           </div>
         </div>
       </div>
@@ -112,7 +126,7 @@
       <div class="problem-bg-glow"></div>
 
       <div class="problem-container">
-        <div class="problem-header">
+        <div class="problem-header reveal">
           <span class="section-label danger">⚠ The Problem</span>
           <h2 class="problem-headline">
             The Market Was Broken.<br />On Purpose.
@@ -123,7 +137,7 @@
           </p>
         </div>
 
-        <div class="problem-grid">
+        <div class="problem-grid reveal">
           <div class="problem-card">
             <span class="problem-card-icon"
               ><i class="fa-solid fa-scale-unbalanced problem-card-icon"></i
@@ -162,7 +176,7 @@
           </div>
         </div>
 
-        <div class="problem-stats">
+        <div class="problem-stats reveal">
           <div class="problem-stat">
             <span class="pstat-value">590M+</span>
             <span class="pstat-label"
@@ -187,7 +201,7 @@
           </div>
         </div>
 
-        <div class="problem-bridge">
+        <div class="problem-bridge reveal">
           <span>So we built Bynomo.</span>
         </div>
       </div>
@@ -197,7 +211,7 @@
       <div class="solution-bg-glow"></div>
 
       <div class="solution-container">
-        <div class="solution-header">
+        <div class="solution-header reveal">
           <span class="section-label accent">✦ Solution</span>
           <h2 class="solution-headline">
             Everything They Couldn't Build.<br />We Did.
@@ -208,7 +222,7 @@
           </p>
         </div>
 
-        <div class="solution-table-wrapper">
+        <div class="solution-table-wrapper reveal">
           <table class="solution-table">
             <thead>
               <tr>
@@ -308,7 +322,7 @@
           </table>
         </div>
 
-        <div class="solution-pillars">
+        <div class="solution-pillars reveal">
           <div class="pillar-card">
             <i class="fa-solid fa-bolt pillar-icon"></i>
             <h3>Fast</h3>
@@ -339,7 +353,7 @@
 
     <section class="howitworks" id="how-it-works">
       <div class="howitworks-container">
-        <div class="howitworks-header">
+        <div class="howitworks-header reveal">
           <span class="section-label accent"> ✦ How It Works</span>
 
           <p class="howitworks-sub">
@@ -349,7 +363,7 @@
         </div>
 
         <div class="howitworks-steps">
-          <div class="step">
+          <div class="step reveal" style="transition-delay: 0.1s">
             <div class="step-left">
               <span class="step-number">01</span>
               <div class="step-line"></div>
@@ -368,7 +382,7 @@
             </div>
           </div>
 
-          <div class="step">
+          <div class="step reveal" style="transition-delay: 0.2s">
             <div class="step-left">
               <span class="step-number">02</span>
               <div class="step-line"></div>
@@ -387,7 +401,7 @@
             </div>
           </div>
 
-          <div class="step">
+          <div class="step reveal" style="transition-delay: 0.1s">
             <div class="step-left">
               <span class="step-number">03</span>
               <div class="step-line"></div>
@@ -407,7 +421,7 @@
             </div>
           </div>
 
-          <div class="step">
+          <div class="step reveal" style="transition-delay: 0.4s">
             <div class="step-left">
               <span class="step-number">04</span>
               <div class="step-line"></div>
@@ -427,7 +441,7 @@
             </div>
           </div>
 
-          <div class="step last-step">
+          <div class="step last-step reveal" style="transition-delay: 0.5s">
             <div class="step-left">
               <span class="step-number">05</span>
             </div>
@@ -467,7 +481,7 @@
       <div class="opportunity-bg-glow"></div>
 
       <div class="opportunity-container">
-        <div class="opportunity-stats-strip">
+        <div class="opportunity-stats-strip reveal-scale">
           <div class="opp-stat">
             <span class="opp-stat-value">$27.56B</span>
             <span class="opp-stat-label">Binary Options Market 2025</span>
@@ -489,7 +503,7 @@
           </div>
         </div>
 
-        <div class="opportunity-header">
+        <div class="opportunity-header reveal">
           <span class="section-label accent">✦ What's Next</span>
           <!-- <h2 class="opportunity-headline">
             The Roadmap Is Just<br />Getting Started.
@@ -497,7 +511,7 @@
         </div>
 
         <div class="opportunity-body">
-          <div class="opportunity-left">
+          <div class="opportunity-left reveal-left">
             <p class="opportunity-desc">
               Bynomo's current product is the foundation. What comes next turns
               it into the most comprehensive on-chain trading platform on BNB
@@ -516,7 +530,7 @@
             </div>
           </div>
 
-          <div class="opportunity-right">
+          <div class="opportunity-right reveal-right">
             <p class="roadmap-heading">Coming Soon</p>
             <ul class="roadmap-list">
               <li class="roadmap-item">
@@ -576,7 +590,7 @@
 
       <div class="footer-container">
         <div class="footer-main">
-          <div class="footer-brand">
+          <div class="footer-brand reveal-left">
             <span class="bynomo-logo footer-logo">BYNOMO</span>
             <p class="footer-tagline">
               The first on-chain binary options trading dapp on BNB Chain.
@@ -623,7 +637,7 @@
             </div>
           </div>
 
-          <div class="footer-nav">
+          <div class="footer-nav reveal">
             <div class="footer-nav-col">
               <span class="footer-nav-heading">Product</span>
               <ul>
@@ -662,7 +676,7 @@
             </div>
           </div>
 
-          <div class="footer-cta">
+          <div class="footer-cta reveal-right">
             <span class="footer-cta-label">Ready to Trade?</span>
             <p class="footer-cta-sub">
               Join the first on-chain binary options platform on BNB Chain.

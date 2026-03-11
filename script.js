@@ -136,6 +136,54 @@ function initMarquee() {
   row2.innerHTML = buildPills(stackRow2);
 }
 
+function initScrollReveal() {
+  const revealEls = document.querySelectorAll(
+    ".reveal, .reveal-left, .reveal-right, .reveal-scale",
+  );
+  if (!revealEls.length) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.12,
+      rootMargin: "0px 0px -60px 0px",
+    },
+  );
+
+  revealEls.forEach((el) => observer.observe(el));
+}
+
+function initLazyImages() {
+  const images = document.querySelectorAll(".hero-img");
+  if (!images.length) return;
+
+  images.forEach((img) => {
+    const placeholder = img.previousElementSibling;
+
+    if (img.complete && img.naturalWidth !== 0) {
+      img.classList.add("loaded");
+      if (placeholder) placeholder.classList.add("hidden");
+      return;
+    }
+
+    img.addEventListener("load", () => {
+      img.classList.add("loaded");
+      if (placeholder) placeholder.classList.add("hidden");
+    });
+
+    img.addEventListener("error", () => {
+      if (placeholder) placeholder.classList.add("hidden");
+    });
+  });
+}
+
 const year = document.querySelector(".year");
 function getCurYear() {
   if (year) {
@@ -147,9 +195,11 @@ function getCurYear() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  initLazyImages();
   initHeroCardSwap();
   initMarquee();
   getCurYear();
   initMobileNav();
   initNavActiveLink();
+  initScrollReveal();
 });
